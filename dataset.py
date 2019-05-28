@@ -95,4 +95,5 @@ class listDataset(Dataset):
         if self.train:
             return (img, label)
         else:
-            return (img, label, org_w, org_h)
+            # return (img, label, org_w, org_h)
+            return (img, label, org_w, org_h, imgpath)
